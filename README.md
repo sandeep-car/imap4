@@ -12,14 +12,11 @@ It takes two required arguments and one optional. The two required arguments are
 The third optional argument is "delete". If you pass in this parameter then the script will find all messages from \<user\> for the last \<numdays\> days, 
 and move them to trash. Use this with care. 
   
-You could also use the delete option to get rid of messages from an annoying co-worker or a crazy ex-significant other. For example: ./gmail_munge.py ben_affleck 365 delete
-
 If you run this with the two required options, gmail.munge.py will log into your gmail account, search for messages from <user> over \<numdays\> and spew out 
 email addresses of the original recipients.
-You can then take that list of recipients and remove them from your mailing list. Nobody likes bounced messages. Nobody!
+You can then take that list of recipients and remove them from your mailing list. 
   
 After you're done removing the email addresses you can run gmail_munge.py with the optional delete parameter which will erase those messages from your gmail account. 
-Because, who wants to look at bounced messages anyway? 
 
 Room for improvement:
   
