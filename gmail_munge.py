@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 # Copyright Sandeep Cariapa (cariapa@gmail.com)
 # This script logs into an IMAP account and munges messages matching a particular pattern.
-# At the current time it is known to wotk with gmail, it may work with other IMAP servers (Outlook) also, with some modifications.
+# At the current time it is known to work with gmail, it may work with other IMAP servers (Outlook) also, with some modifications.
 # Assumes that you either have marked your gmail account with less secure app access (not recommended)
 # or that you have 2-step verification turned on and use an app password instead (recommended).
 # More easy reading. Probably need to read the RFC also.
