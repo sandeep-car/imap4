@@ -1,5 +1,6 @@
 # imap4
-Code to deal with IMAP4 messages
+Code to deal with IMAP4 messages.
+
 gmail_munge.py logs into your gmail account and does some things :-) I used Python 3.9.5.
 
 It takes two required arguments and one optional. The two required arguments are: \<user\> and \<numdays\>
