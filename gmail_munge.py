@@ -16,7 +16,7 @@ imap_url = "imap.gmail.com"
 # These are the credentials of the email account where your bounced emails land up.
 user = "email@gmail.com"
 password = "blahdeblahblah"
-delete_maadi = False
+delete_flag = False
 # https://www.geeksforgeeks.org/check-if-email-address-valid-or-not-in-python/
 email_regexp = r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}'
 
@@ -29,7 +29,7 @@ if ((len(sys.argv) != 3) and (len(sys.argv) != 4)):
 
 if (len(sys.argv) == 4):
   if (sys.argv[3] == "delete"):
-    delete_maadi = True
+    delete_flag = True
   else:
     print ("Your arg needs to be delete.")
     sys.exit(1)
@@ -54,7 +54,7 @@ except Exception as ex:
 #sys.exit(0)
 
 # If we're going to delete then readonly must be False.
-if (delete_maadi == True):
+if (delete_flag == True):
   conn.select('"INBOX"',readonly=False)
 else:
   conn.select('"INBOX"',readonly=True)
@@ -71,7 +71,7 @@ for j, i in enumerate(mail_id_list):
   ii = i.decode("utf-8")
   iii = int(ii)
   print ("J: ", j, "I: ", iii)
-  if (delete_maadi == False):
+  if (delete_flag == False):
     resp, data = conn.fetch(i, "(RFC822)")
     body = data[0][1].decode("utf-8")
 #    print(body)
