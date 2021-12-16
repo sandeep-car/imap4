@@ -22,9 +22,9 @@ Because, who wants to look at bounced messages anyway?
 
 Room for improvement:
   
-1. By default the script only looks in the INBOX mailbox. If you want it to search in others, you'll need to modify the script. This could be another parameter.
+1. By default the script only looks in the INBOX mailbox. If you want it to search in other mailboxes, you'll need to modify the script. This could be another parameter.
   
 2. You could modify the code where instead of searching (re.findall) for an email it could search for a particular pattern. This would make it similar to running 
-a search from the gmail searchbar. Only advantage being that you could script other stuff with it.
+a search from the gmail searchbar. Only advantage being that you could script other stuff with the output.
 
 If you think this sounds interesting and want to play with it, drop me a note.
