@@ -2,7 +2,7 @@
 Code to deal with IMAP4 messages
 gmail_munge.py logs into your gmail account and does some things :-) I used Python 3.9.5.
 
-It takes two required arguments and one optional. The two required arguments are: <user> and <numdays>
+It takes two required arguments and one optional. The two required arguments are: \<user\> and <numdays>
  
 <user> is the username of whoever you want to search for in your mailbox. MAILER_DAEMON for example would search for bounced email messages.
   
