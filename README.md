@@ -3,16 +3,16 @@ Code to deal with IMAP4 messages.
 
 gmail_munge.py logs into your gmail account and does some things :-) I used Python 3.9.5.
 
-It takes two required arguments and one optional. The two required arguments are: \<user\> and \<numdays\>
+It takes two required arguments and one optional. The two required arguments are: \<buser\> and \<numdays\>
  
-\<user\> is the username of whoever you want to search for in your mailbox. MAILER_DAEMON for example would search for bounced email messages.
+\<buser\> is the username of whoever you want to search for in your mailbox. MAILER_DAEMON for example would search for bounced email messages.
   
-\<numdays\> is a parameter which describes the number of days you want the script to go back for. If \<numdays\> is 1, then it searches for all messages that match \<user\> for the last 24 hours. If 2, then 48.
+\<numdays\> is a parameter which describes the number of days you want the script to go back for. If \<numdays\> is 1, then it searches for all messages that match \<buser\> for the last 24 hours. If 2, then 48.
   
-The third optional argument is "delete". If you pass in this parameter then the script will find all messages from \<user\> for the last \<numdays\> days, 
+The third optional argument is "delete". If you pass in this parameter then the script will find all messages from \<buser\> for the last \<numdays\> days, 
 and move them to trash. Use this with care. 
   
-If you run this with the two required options, gmail.munge.py will log into your gmail account, search for messages from <user> over \<numdays\> and spew out 
+If you run this with the two required options, gmail.munge.py will log into your gmail account, search for messages from <buser> over \<numdays\> and spew out 
 email addresses of the original recipients.
 You can then take that list of recipients and remove them from your mailing list. 
   
