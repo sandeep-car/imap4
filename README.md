@@ -1,11 +1,11 @@
 # imap4
 Code to deal with IMAP4 messages.
 
-gmail_munge.py logs into your gmail account and does some things :-) I used Python 3.9.5.
+gmail_munge.py logs into your gmail account and handles bounced messages from a mailing list. I used Python 3.9.5.
 
 It takes two required arguments and one optional. The two required arguments are: \<buser\> and \<numdays\>
  
-\<buser\> is the username of whoever you want to search for in your mailbox. MAILER_DAEMON for example would search for bounced email messages.
+\<buser\> is the username of whoever you want to search for in your mailbox. MAILER-DAEMON for example would search for bounced email messages.
   
 \<numdays\> is a parameter which describes the number of days you want the script to go back for. If \<numdays\> is 1, then it searches for all messages that match \<buser\> for the last 24 hours. If 2, then 48.
   
