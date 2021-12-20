@@ -68,9 +68,8 @@ resp, data = conn.search('utf-8', '(SENTSINCE {0})'.format(date), '(FROM {0})'.f
 
 mail_id_list = data[0].split()
 for j, i in enumerate(mail_id_list):
-  ii = i.decode("utf-8")
-  iii = int(ii)
-  print ("J: ", j, "I: ", iii)
+  ii = int(i.decode("utf-8"))
+  print ("J: ", j, "I: ", ii)
   if (delete_flag == False):
     resp, data = conn.fetch(i, "(RFC822)")
     body = data[0][1].decode("utf-8")
@@ -80,8 +79,8 @@ for j, i in enumerate(mail_id_list):
     match_list = re.findall("To: (" + email_regexp + ")", body)
 #    print(match_list)
     for email in match_list:
-      # Here we are stripping away the email address of the sender which is typically in a bounced message as well.
-      if (email.strip() == "email@gmail.com"):
+      # Here we are ignoring the email address of the sender which is typically in a bounced message as well.
+      if (email.strip() == user):
         continue
       print("EMAIL:", email.strip())
   # We are here if we were called to delete messages.
