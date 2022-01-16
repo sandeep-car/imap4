@@ -4,7 +4,7 @@
 # At the current time it is known to work with gmail, it may work with other IMAP servers (Outlook) also, with some modifications.
 # Assumes that you either have marked your gmail account with less secure app access (not recommended)
 # or that you have 2-step verification turned on and use an app password instead (recommended).
-# More easy reading. Probably need to read the RFC also.
+# More easy reading. Probably need to read the RFC also: https://datatracker.ietf.org/doc/html/rfc9051
 # https://medium.com/@yernagulahemanth/download-emails-from-gmail-using-python-31e9bc62e501
 # https://coderwall.com/p/gorteg/python-s-imaplib
 
